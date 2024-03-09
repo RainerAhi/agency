@@ -2,6 +2,7 @@ import Lenis from "@studio-freight/lenis";
 import { SectionOne } from "./Sections/SectionOne";
 import { SectionTwo } from "./Sections/SectionTwo";
 import { SectionThree } from "./Sections/SectionThree";
+import Animations from "./Animations";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
   
   requestAnimationFrame(raf);
   setTimeout(addAnotherSection, 1000);
+  
 
   return (
     <div>
@@ -46,6 +48,7 @@ function App() {
         <SectionTwo />
       </div>
       <SectionThree />
+      <Animations />
     </div>
   )
 }
