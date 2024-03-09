@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: auto;
+}
+
+body {
+  background-color: #fafbfa;
+  color: #282929;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: all;
+  background-color: transparent;
+}
+
+/* SECTION ONE AND TWO BACKGROUND */
+
+.sections-container {
+  display: flex;
+  flex-direction: column; /* Stack Sections One and Two vertically */
+  height: 200vh; /* Adjust the height as needed */
+  background-image: url('/1.svg'), url('/2.svg'); /* Set both left and right images */
+  background-position: left, right; /* Position left image on the left side, and right image on the right side */
+  background-repeat: no-repeat, no-repeat; /* Prevent the images from repeating */
+  background-size: 50%, 50%; /* Set size of the images */
+}
+
+/* SECTION ONE */
+
+.one {
+  display: flex;
+}
+
+.navContainer {
+  width: 100%;
+  height: 20%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBar {
+  width: 40%;
+  height: 83px;
+  background-color: rgba(255, 255, 255, .6);
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.05);
+  justify-content: space-evenly;
+}
+
+.navImage {
+  height: 64px;
+  width: 64px;
+  background-color: #aca8fe;
+  border-radius: 16px;
+  margin-left: 0;
+}
+
+.navBar h1 {
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin-left: 1rem;
+}
+
+.navTextTwo {
+  display: flex;
+}
+
+.navBar h2 {
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navButtonOne {
+  width: 140px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aca8fe;
+  border-radius: 0.6rem;
+  margin-right: 1rem;
+}
+
+.navButtonTwo {
+  width: 110px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202120;
+  border-radius: 0.6rem;
+  color: white;
+}
+
+.content-one {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline-big {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  height: auto;
+  line-height: 1;
+}
+
+.headline-one {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headline-one-big {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15rem;
+  letter-spacing: -10px;
+  margin-bottom: 0;
+}
+
+.headline-one-big span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: -10px;
+}
+
+.subheadline-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  background-color: transparent;
+}
+
+.logoImage {
+  height: 125px;
+  width: 125px;
+  background-color: #aca8fe;
+  border-radius: 32px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.subheadline-one-big {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 7.5rem;
+  letter-spacing: -5px;
+  line-height: 7.5rem;
+  margin-bottom: 2.5%;
+}
+
+.subheadline-one-small {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: -2.5px;
+  line-height: 2rem;
+  margin-left: 1rem;
+}
+
+.text-one {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: -1.5px;
+  line-height: 2.5rem;
+  width: 55%;
+  text-align: center;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+/* SECTION TWO */
+
+.two {
+  display: flex;
+  align-items: center;
+}
+
+/* SECTION THREE */
+
+.three {
+  display: flex;
+  align-items: center;
+}
+
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  .body {
+    overflow: hidden;
+  }
+
+  .intro {
+    height: 100vh;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    text-align: center;
+    position: relative;
+    padding-right: 0;
+  }
+  
+  .scroll {
+    position: relative;
+    margin-bottom: 15%;
+  }
+  
+  .rainer {
+    width: 100%;
+  }
+  
+  .project h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .arrow {
+    width: 0;
+  }
+
+  .project:hover span p {
+    width: 0px;
+    transition: width 0.5s;
+    color: #282929;
+  }
+
+  .project:hover > img {
+    transform: scale(0);
+  }
+  
+  .contact {
+    font-family: 'Playfair Display SC', serif;
+    color: #282929;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0 5%;
+    text-transform: uppercase;
+  }
+
+  .footer {
+    height: 100vh;
+    width: 100%;
+    margin-top: 50%;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 0.75rem;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    bottom: 0;
+    font-size: 0.75rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  
+  li {
+    padding: 5px 5px;
+  }
+
+  .cursor-dot {
+    width: 0px;
+    height: 0px;
+    background-color: #282929;
+    border: 0px solid #f5f4f4;
+  }
+}
