@@ -27,7 +27,7 @@ section {
 .sections-container {
   display: flex;
   flex-direction: column; /* Stack Sections One and Two vertically */
-  height: 200vh; /* Adjust the height as needed */
+  height: 220vh; /* Adjust the height as needed */
   background-image: url('/1.svg'), url('/2.svg'); /* Set both left and right images */
   background-position: left, right; /* Position left image on the left side, and right image on the right side */
   background-repeat: no-repeat, no-repeat; /* Prevent the images from repeating */
@@ -38,6 +38,9 @@ section {
 
 .one {
   display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 120vh;
 }
 
 .navContainer {
@@ -119,6 +122,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .headline-big {
@@ -200,11 +204,53 @@ section {
   margin-bottom: 1.75rem;
 }
 
+.trusted-by {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 100px;
+}
+
+.trusted-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #333333;
+  letter-spacing: -0.5px;
+  padding: 20px;
+}
+
+.sponsor {
+  height: 60%;
+  width: auto;
+  padding: 20px;
+}
+
 /* SECTION TWO */
 
 .two {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-color: transparent;
+}
+
+
+.two-expanding {
+  width: 70rem;
+  height: 100vw;
+  background-image: linear-gradient(135deg, #353535, #0e0e0e);
+  align-self: center;
+  border-radius: 75px;
+  margin-top: 0%;
+  position: relative;
+  top: 0;
 }
 
 /* SECTION THREE */
@@ -212,6 +258,7 @@ section {
 .three {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 

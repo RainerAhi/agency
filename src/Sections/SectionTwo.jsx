@@ -4,7 +4,9 @@ export const SectionTwo = () => {
 
   return (
     <section className="two">
-        <h1>Second</h1>
+      <div className="two-expanding" >
+
+      </div>
     </section>
   );
 };

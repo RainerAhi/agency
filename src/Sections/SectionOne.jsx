@@ -36,6 +36,14 @@ export const SectionOne = () => {
           </div>
         </div>
       </div>
+      <div className="trusted-by" >
+        <h1 className="trusted-text" >Trusted by</h1>
+        <img className="sponsor" src="/sponsor1.png" />
+        <img className="sponsor" src="/sponsor9.png" />
+        <img className="sponsor" src="/sponsor3.png" />
+        <img className="sponsor" src="/sponsor7.png" />
+        <img className="sponsor" src="/sponsor8.png" />
+      </div>
     </section>
   );
 };

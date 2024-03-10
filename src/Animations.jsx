@@ -34,6 +34,45 @@ export default function Animations(props) {
       },
     })
 
+    // SECOND TO THIRD
+
+    .to(".two-expanding", {
+      opacity: 1,
+      width: "150%",
+      height: "100vh",
+        scrollTrigger: {
+          trigger: ".two",
+          start: "top center",
+          end: "bottom top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
+
+      .to(".two-expanding", {
+        position: "fixed",
+          scrollTrigger: {
+            trigger: ".three",
+            start: "top bottom",
+            end: "toptop",
+            scrub: true,
+            immediateRender: false,
+          },
+        })
+
+      // .to(".two-expanding", {
+      //   position: "fixed",
+      //   width: "115%",
+      //   height: "100vh",
+      //     scrollTrigger: {
+      //       trigger: ".three",
+      //       start: "top bottom",
+      //       end: "top top",
+      //       scrub: true,
+      //       immediateRender: false,
+      //     },
+      //   })
+
 
     })
     
