@@ -48,7 +48,6 @@ section {
   height: 20%;
   background-color: transparent;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -64,6 +63,7 @@ section {
   backdrop-filter: blur(30px);
   box-shadow: 0 20px 40px rgba(0,0,0,.05);
   justify-content: space-evenly;
+  align-self: center;
 }
 
 .navImage {
@@ -257,7 +257,18 @@ section {
 
 .three {
   display: flex;
-  align-items: center;
+  position: relative;
+}
+
+/* SECTION FOUR */
+.four {
+  display: flex;
+  position: relative;
+}
+
+/* SECTION FOUR */
+.five {
+  display: flex;
   position: relative;
 }
 

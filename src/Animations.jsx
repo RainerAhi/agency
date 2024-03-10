@@ -20,21 +20,47 @@ export default function Animations(props) {
       let { isMobile, isDesktop } = context.conditions;
 
       //FIRST TO SECOND
+      
 
     tl
-    .to(".navBar", {
-    opacity: 0,
-    width: "25%",
+    // .to(".navBar", {
+    //   opacity: 0,
+    //   height: "auto",
+    //   alignSelf: "top",
+    //   scrollTrigger: {
+    //     trigger: ".one",
+    //     start: "top 0%",
+    //     end: "bottom bottom",
+    //     scrub: true,
+    //     immediateRender: false,
+    //   },
+    // })
+
+    .to(".navContainer", {
+      opacity: 0,
+      height: "auto",
+      alignItems: "top",
       scrollTrigger: {
-        trigger: ".two",
-        start: "top bottom",
-        end: "top top",
+        trigger: ".one",
+        start: "top 0%",
+        end: "bottom bottom",
         scrub: true,
         immediateRender: false,
       },
     })
 
     // SECOND TO THIRD
+
+    .to(".trusted-by", {
+      opacity: 0,
+        scrollTrigger: {
+          trigger: ".two",
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
 
     .to(".two-expanding", {
       opacity: 1,
@@ -54,24 +80,35 @@ export default function Animations(props) {
           scrollTrigger: {
             trigger: ".three",
             start: "top bottom",
-            end: "toptop",
+            end: "top top",
             scrub: true,
             immediateRender: false,
           },
         })
 
-      // .to(".two-expanding", {
-      //   position: "fixed",
-      //   width: "115%",
-      //   height: "100vh",
-      //     scrollTrigger: {
-      //       trigger: ".three",
-      //       start: "top bottom",
-      //       end: "top top",
-      //       scrub: true,
-      //       immediateRender: false,
-      //     },
-      //   })
+        // FOUR TO FIVE
+
+        .to(".two-expanding", {
+          width: "70rem",
+          height: "75%",
+            scrollTrigger: {
+              trigger: ".four",
+              start: "top bottom",
+              end: "top top",
+              scrub: true,
+              immediateRender: false,
+            },
+          })
+
+          .to(".two-expanding", {
+              scrollTrigger: {
+                trigger: ".four",
+                start: "top center",
+                end: "bottom top",
+                scrub: true,
+                immediateRender: false,
+              },
+            })
 
 
     })

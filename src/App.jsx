@@ -3,6 +3,8 @@ import { SectionOne } from "./Sections/SectionOne";
 import { SectionTwo } from "./Sections/SectionTwo";
 import { SectionThree } from "./Sections/SectionThree";
 import Animations from "./Animations";
+import { SectionFour } from "./Sections/SectionFour";
+import { SectionFive } from "./Sections/SectionFive";
 
 function App() {
 
@@ -48,6 +50,8 @@ function App() {
         <SectionTwo />
       </div>
       <SectionThree />
+      <SectionFour />
+      <SectionFive />
       <Animations />
     </div>
   )
