@@ -63,10 +63,10 @@ export default function Animations(props) {
       })
 
     .to(".two-expanding", {
-      width: "150%",
+      width: "130%",
       height: "100vh",
       borderRadius: "75px",
-      left: "-25%",
+      left: "-15%",
         scrollTrigger: {
           trigger: ".two-one",
           start: "top center",
