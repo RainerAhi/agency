@@ -27,7 +27,7 @@ section {
 .sections-container {
   display: flex;
   flex-direction: column; /* Stack Sections One and Two vertically */
-  height: 220vh; /* Adjust the height as needed */
+  height: 520vh; /* Adjust the height as needed */
   background-image: url('/1.svg'), url('/2.svg'); /* Set both left and right images */
   background-position: left, right; /* Position left image on the left side, and right image on the right side */
   background-repeat: no-repeat, no-repeat; /* Prevent the images from repeating */
@@ -237,20 +237,47 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 400vh;
+  background-color: transparent;
+}
+
+.two-one {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  position: relative;
+}
+
+.two-two {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.two-three {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.two-four {
+  width: 100%;
   height: 100vh;
   background-color: transparent;
 }
 
 
 .two-expanding {
-  width: 70rem;
-  height: 100vw;
+  width: 70%;
+  height: 100vh;
   background-image: linear-gradient(135deg, #353535, #0e0e0e);
   align-self: center;
   border-radius: 75px;
   margin-top: 0%;
-  position: relative;
+  position: absolute;
   top: 0;
+  left: 15%;
+  right: auto;
 }
 
 /* SECTION THREE */

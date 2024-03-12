@@ -63,13 +63,14 @@ export default function Animations(props) {
       })
 
     .to(".two-expanding", {
-      opacity: 1,
       width: "150%",
       height: "100vh",
+      borderRadius: "75px",
+      left: "-25%",
         scrollTrigger: {
-          trigger: ".two",
+          trigger: ".two-one",
           start: "top center",
-          end: "bottom top",
+          end: "25% top",
           scrub: true,
           immediateRender: false,
         },
@@ -77,6 +78,31 @@ export default function Animations(props) {
 
       .to(".two-expanding", {
         position: "fixed",
+          scrollTrigger: {
+            trigger: ".two-two",
+            start: "top bottom",
+            end: "top top",
+            scrub: true,
+            immediateRender: false,
+          },
+        })
+
+        .to(".two-expanding", {
+          width: "70vw",
+          left: "15vw",
+          borderRadius: "75px",
+            scrollTrigger: {
+              trigger: ".two-four",
+              start: "top center",
+              end: "bottom top",
+              scrub: true,
+              immediateRender: false,
+            },
+          })
+
+          
+      .to(".two-expanding", {
+        position: "relative",
           scrollTrigger: {
             trigger: ".three",
             start: "top bottom",
@@ -87,28 +113,6 @@ export default function Animations(props) {
         })
 
         // FOUR TO FIVE
-
-        .to(".two-expanding", {
-          width: "70rem",
-          height: "75%",
-            scrollTrigger: {
-              trigger: ".four",
-              start: "top bottom",
-              end: "top top",
-              scrub: true,
-              immediateRender: false,
-            },
-          })
-
-          .to(".two-expanding", {
-              scrollTrigger: {
-                trigger: ".four",
-                start: "top center",
-                end: "bottom top",
-                scrub: true,
-                immediateRender: false,
-              },
-            })
 
 
     })
